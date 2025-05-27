@@ -43,7 +43,7 @@ load_full_state_path: ""
 # If enable_checkpointing is true, an asynchronous checkpointer will be used if
 # async_checkpointing is true, else a synchronous one is used. If you have
 # problems with the checkpointer we recommend trying the synchronous one.
-enable_checkpointing: True
+enable_checkpointing: False
 async_checkpointing: True
 checkpoint_period: 10_000
 # enables one replica to read the ckpt then broadcast to the rest
@@ -588,7 +588,7 @@ report_heartbeat_metric_for_gcp_monitoring: False
 heartbeat_reporting_interval_in_seconds: 5
 report_performance_metric_for_gcp_monitoring: False
 
-enable_tensorboard: True
+enable_tensorboard: False
 
 # Vertex AI Tensorboard Configurations - https://github.com/google/maxtext/tree/main/getting_started/Use_Vertex_AI_Tensorboard.md
 # Set to True for GCE, False if running via XPK
